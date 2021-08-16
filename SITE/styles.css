@@ -1,0 +1,15 @@
+/*List of fonts used in this web page*/
+@font-face {
+  font-family: "Roboto regular";
+  src: url("Polices/Roboto-Regular-webfont.ttf") format("truetype");
+  src: url("Polices/Roboto-Regular-webfont.eot") format("embedded-opentype");
+  src: url("Polices/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("Polices/Shrikhand-Regular.otf") format("Opentype");
+  font-weight: bold;
+  font-style: normal;
+}
