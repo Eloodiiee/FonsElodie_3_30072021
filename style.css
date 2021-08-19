@@ -14,6 +14,8 @@
 }
 body {
   background: #fff;
+  font-family: "Roboto regular";
+  margin: 0px;
 }
 
 .header__container {
@@ -21,10 +23,138 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .header__container--title {
-  font-size: 27px;
+  font-size: 16px;
   font-family: "Shrikhand";
+  padding: 5% 0% 2%;
+}
+.header__container--menutitle {
+  color: black;
+  font-family: "Shrikhand";
+}
+.header__container h1 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.header__container--position {
+  background-color: #eaeaea;
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  padding: 4% 0%;
+}
+.header__container--restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.header__container--button {
+  font-size: 17px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  color: #fff;
+  text-align: center;
+  padding: 14px;
+  cursor: pointer;
+}
+.header__container--navigation {
+  width: 96%;
+  font-size: 20px;
+}
+.header__container--navbtn {
+  width: 100%;
+  padding: 7% 0%;
+  border: 2px solid #eaeaea;
+  border-radius: 14px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 307px;
+  font-size: 17px;
+  justify-content: space-around;
+}
+
+h2 {
+  font-size: 27px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+main {
+  margin: 0% 5%;
+}
+
+.container {
+  width: 100%;
+  height: 1060px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container__box {
+  height: 100%;
+  border: 2px solid #eaeaea;
+  border-radius: 24px;
+}
+.container img {
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+  border-radius: 20px 20px 0px 0px;
+}
+.container__caption {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2% 4%;
+}
+.container__caption--text {
+  display: flex;
+  flex-direction: column;
+}
+.container__caption h4 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.container__caption p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding-bottom: 5%;
+  font-size: 15px;
+}
+footer h5 {
+  font-family: "Shrikhand";
+  font-size: 17px;
+  padding: 25px;
+  margin-block-start: 3em;
+  margin-block-end: 0em;
+}
+footer ul {
+  padding-inline-start: 25px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+footer i {
+  padding-right: 10px;
+}
+footer li {
+  list-style: none;
+  margin-bottom: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */
