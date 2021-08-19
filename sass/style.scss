@@ -45,6 +45,13 @@ body {
   &--restaurants {
     @include flexbox-column;
     text-align: center;
+    justify-content: space-evenly;
+    height: 271px;
+    background-color: $bg-color;
+  }
+  p {
+    margin-block-start: 1em;
+    margin-block-end: 0em;
   }
   &--button {
     font-size: 17px;
@@ -61,17 +68,44 @@ body {
   }
 
   &--navigation {
-    width: 96%;
+    width: 93%;
     font-size: 20px;
+    h3 {
+      margin-block-start: 2em;
+    }
   }
+
   &--navbtn {
-    width: 100%;
+    width: 95%;
     padding: 7% 0%;
-    border: 2px solid #eaeaea;
-    border-radius: 14px;
+    box-shadow: 1px 3px 2px #eaeaea;
+    border-radius: 27px;
     text-align: center;
+    background-color: $bg-color;
+    color: black;
+    font-weight: 600;
+    span {
+      background-color: $color-primary;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 50px;
+      position: absolute;
+      left: 9px;
+    }
+    i {
+      padding-right: 3%;
+      color: #808080;
+    }
+
+    &:hover {
+      background: lighten($color-primary, 35%);
+      i {
+        color: $color-primary;
+      }
+    }
   }
 }
+
 nav {
   @include flexbox-column;
   height: 307px;
@@ -84,25 +118,36 @@ h2 {
   margin-block-end: 0em;
 }
 main {
-  margin: 0% 5%;
+  background-color: #f6f6f6;
+  padding-bottom: 13%;
+  h1 {
+    font-size: 24px;
+    padding-left: 24px;
+    margin-block-start: 2em;
+    padding-top: 50px;
+    margin-block-end: 0em;
+  }
 }
 
 .container {
   width: 100%;
-  height: 1060px;
+  height: 980px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   &__box {
     height: 100%;
+    width: 335px;
     border: 2px solid #eaeaea;
     border-radius: 24px;
+    background-color: #fff;
   }
 
   img {
     width: 100%;
     object-fit: cover;
-    height: 180px;
+    height: 144px;
     border-radius: 20px 20px 0px 0px;
   }
   &__caption {
@@ -132,13 +177,13 @@ a {
 footer {
   background-color: $footer-color;
   color: #fff;
-  padding-bottom: 5%;
+  padding-bottom: 9%;
   font-size: 15px;
   h5 {
     font-family: "Shrikhand";
     font-size: 17px;
     padding: 25px;
-    margin-block-start: 3em;
+    margin-block-start: 0em;
     margin-block-end: 0em;
   }
 
