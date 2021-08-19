@@ -48,6 +48,13 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: space-evenly;
+  height: 271px;
+  background-color: #fafafa;
+}
+.header__container p {
+  margin-block-start: 1em;
+  margin-block-end: 0em;
 }
 .header__container--button {
   font-size: 17px;
@@ -59,15 +66,39 @@ body {
   cursor: pointer;
 }
 .header__container--navigation {
-  width: 96%;
+  width: 93%;
   font-size: 20px;
 }
+.header__container--navigation h3 {
+  margin-block-start: 2em;
+}
 .header__container--navbtn {
-  width: 100%;
+  width: 95%;
   padding: 7% 0%;
-  border: 2px solid #eaeaea;
-  border-radius: 14px;
+  box-shadow: 1px 3px 2px #eaeaea;
+  border-radius: 27px;
   text-align: center;
+  background-color: #fafafa;
+  color: black;
+  font-weight: 600;
+}
+.header__container--navbtn span {
+  background-color: #9356dc;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 50px;
+  position: absolute;
+  left: 9px;
+}
+.header__container--navbtn i {
+  padding-right: 3%;
+  color: #808080;
+}
+.header__container--navbtn:hover {
+  background: #f2eafb;
+}
+.header__container--navbtn:hover i {
+  color: #9356dc;
 }
 
 nav {
@@ -86,25 +117,36 @@ h2 {
 }
 
 main {
-  margin: 0% 5%;
+  background-color: #f6f6f6;
+  padding-bottom: 13%;
+}
+main h1 {
+  font-size: 24px;
+  padding-left: 24px;
+  margin-block-start: 2em;
+  padding-top: 50px;
+  margin-block-end: 0em;
 }
 
 .container {
   width: 100%;
-  height: 1060px;
+  height: 980px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .container__box {
   height: 100%;
+  width: 335px;
   border: 2px solid #eaeaea;
   border-radius: 24px;
+  background-color: #fff;
 }
 .container img {
   width: 100%;
   object-fit: cover;
-  height: 180px;
+  height: 144px;
   border-radius: 20px 20px 0px 0px;
 }
 .container__caption {
@@ -134,14 +176,14 @@ a {
 footer {
   background-color: #353535;
   color: #fff;
-  padding-bottom: 5%;
+  padding-bottom: 9%;
   font-size: 15px;
 }
 footer h5 {
   font-family: "Shrikhand";
   font-size: 17px;
   padding: 25px;
-  margin-block-start: 3em;
+  margin-block-start: 0em;
   margin-block-end: 0em;
 }
 footer ul {
