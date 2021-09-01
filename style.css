@@ -16,6 +16,16 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
 
+@keyframes menuAnim {
+  0% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 @keyframes animateC {
   0% {
     transform: rotate(0deg);
@@ -45,6 +55,22 @@
     transform: scale(1);
   }
 }
+@keyframes FadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+@keyframes AnimateOut {
+  to {
+    visibility: hidden;
+    display: none;
+  }
+}
 @keyframes cssAnimation2 {
   to {
     visibility: hidden;
@@ -55,7 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: cssAnimation2 0s 3s forwards;
+  animation: AnimateOut 0s 3s forwards;
   visibility: visible;
   position: fixed;
   top: 0;
@@ -64,6 +90,16 @@
   right: 0;
   z-index: 10;
   background: white;
+}
+
+.loading__container-2 {
+  transform-origin: center;
+  animation: FadeOut 1s 2s forwards;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 body {
@@ -85,7 +121,6 @@ body {
   line-height: 150px;
   font-family: "Shrikhand";
   font-size: 19px;
-  /* color: $color-primary;*/
   background: linear-gradient(to left, #9356dc 0%, #ff79da 50%, #99e2d0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -119,29 +154,14 @@ body {
   width: 50%;
   height: 4px;
   background: transparent;
-  transform-origin: left;
   animation: animate 2s linear infinite;
 }
 
 .ring {
-  float: left;
   animation: FadeIn 1s linear;
   animation-fill-mode: both;
 }
 
-/*.ring:nth-child(1) {
-  animation-delay: 0.5s;
-}
-.ring:nth-child(2) {
-  animation-delay: 1s;
-}
-.ring:nth-child(3) {
-  animation-delay: 1.5s;
-}
-.ring:nth-child(4) {
-  animation-delay: 2s;
-}
-*/
 body {
   background: #fff;
   font-family: "Roboto regular";
@@ -221,11 +241,13 @@ body {
 .header__container--button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, #ff98e2 0%, #a36fe1 100%);
 }
 .header__container--button:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   outline: 0;
+  background: linear-gradient(180deg, #ff98e2 0%, #a36fe1 100%);
 }
 .header__container--navigation {
   width: 93%;
@@ -536,6 +558,8 @@ main {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  opacity: 0;
+  animation: menuAnim 2s ease-in-out 0s 1 normal forwards;
 }
 .main__container--meal:hover .main__container--text {
   width: 65%;
@@ -553,6 +577,36 @@ main {
   transform: rotate(-360deg);
   font-size: 1em;
   padding: 5%;
+}
+.main__container .main__container--meal-1 {
+  animation-delay: 0ms;
+}
+.main__container .main__container--meal-2 {
+  animation-delay: 400ms;
+}
+.main__container .main__container--meal-3 {
+  animation-delay: 800ms;
+}
+.main__container .main__container--meal-4 {
+  animation-delay: 1100ms;
+}
+.main__container .main__container--meal-5 {
+  animation-delay: 1400ms;
+}
+.main__container .main__container--meal-6 {
+  animation-delay: 1700ms;
+}
+.main__container .main__container--meal-7 {
+  animation-delay: 1900ms;
+}
+.main__container .main__container--meal-8 {
+  animation-delay: 2100ms;
+}
+.main__container .main__container--meal-9 {
+  animation-delay: 2300ms;
+}
+.main__container .main__container--meal-10 {
+  animation-delay: 2500ms;
 }
 .main__container--text {
   width: 86%;
@@ -616,11 +670,13 @@ main {
 .main__container--button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, #ff98e2 0%, #a36fe1 100%);
 }
 .main__container--button:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   outline: 0;
+  background: linear-gradient(180deg, #ff98e2 0%, #a36fe1 100%);
 }
 
 /*commentaire*/
