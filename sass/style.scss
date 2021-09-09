@@ -12,8 +12,8 @@
   font-weight: bold;
   font-style: normal;
 }
-@import "variables";
-@import "mixins";
+@import "../Utils/variables";
+@import "../Utils/mixins";
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
