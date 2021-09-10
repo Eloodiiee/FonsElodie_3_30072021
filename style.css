@@ -849,11 +849,21 @@ main {
     margin-bottom: 7em;
   }
 
+  .menu2 {
+    height: 70em;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7em;
+  }
+
   .main__container {
     height: 92%;
     width: 90%;
     border-radius: 35px;
-    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.9);
   }
   .main__container--bigwrapper {
     display: flex;
@@ -969,6 +979,68 @@ main {
     font-size: 1.5em;
   }
 
+  .restaurant__container--menutitle {
+    font-size: 1.5em;
+  }
+  .restaurant__container--menutitle i {
+    font-size: 1.5em;
+  }
+  .restaurant__container img {
+    height: 96em;
+  }
+  .restaurant__container .enchantee {
+    height: 116em;
+  }
+
+  .menu {
+    height: 80em;
+  }
+
+  .menu2 {
+    height: 100em;
+  }
+
+  .main__container {
+    height: 100%;
+  }
+  .main__container h3 {
+    font-size: 1.8em;
+  }
+  .main__container--menutitle {
+    font-size: 1.7em;
+    align-items: center;
+  }
+  .main__container--menutitle i {
+    font-size: 1.7em;
+  }
+  .main__container--wrapper1, .main__container--wrapper2, .main__container--wrapper3 {
+    height: 22em;
+  }
+  .main__container .fourmeal {
+    height: 30em;
+  }
+  .main__container--text h4 {
+    font-size: 1.5em;
+  }
+  .main__container--text p {
+    font-size: 1.5em;
+    width: 31vw;
+  }
+  .main__container--price {
+    font-size: 1.5em;
+  }
+  .main__container .full__heart--menu {
+    font-size: 1.5em;
+    bottom: 19px;
+    left: 1px;
+  }
+  .main__container--button {
+    width: 28%;
+    margin: 6% 0% 5%;
+    padding: 23px;
+    font-size: 1.7em;
+  }
+
   .container {
     height: 50rem;
     justify-content: space-evenly;
@@ -1015,7 +1087,7 @@ main {
   }
 
   footer h5 {
-    font-size: 5em;
+    font-size: 4em;
   }
   footer ul {
     display: flex;
@@ -1024,7 +1096,7 @@ main {
     justify-content: space-around;
   }
   footer li {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 }
 @media screen and (min-width: 1700px) {
@@ -1052,22 +1124,99 @@ main {
     padding-bottom: 3%;
   }
   footer h5 {
-    font-size: 5em;
+    font-size: 3em;
   }
   footer li {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
+  .restaurant__container--menutitle {
+    font-size: 1.4em;
+  }
+  .restaurant__container--menutitle i {
+    font-size: 1.4em;
+  }
+  .restaurant__container--menutitle i:visited {
+    color: #444;
+  }
   .restaurant__container--img {
     height: 2em;
   }
   .restaurant__container--img img {
     height: 79em;
   }
+  .restaurant__container--img .enchantee {
+    height: 110em;
+  }
+
+  .menu2 {
+    height: 107em;
+    margin-bottom: 0em;
+  }
 
   .main__container {
-    height: 80%;
+    height: 75%;
+    width: 64%;
+  }
+  .main__container h4 {
+    font-size: 1.2em;
+  }
+  .main__container p {
+    font-size: 1.2em;
+  }
+  .main__container--price {
+    font-size: 1.3em;
+  }
+  .main__container h3 {
+    font-size: 1.3em;
+  }
+  .main__container--button {
+    width: 23%;
+    margin: 2% 0% 3%;
+    padding: 23px;
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 1920px) {
+  .restaurant__container h1 {
+    margin: 2% 0% 1%;
+  }
+  .restaurant__container .enchantee {
+    height: 83em;
+  }
+
+  .menu2 {
+    height: 74em;
+  }
+
+  .main__container {
+    height: 100%;
     width: 57%;
+  }
+  .main__container--menutitle {
+    font-size: 1.2em;
+  }
+  .main__container h3 {
+    font-size: 1.3em;
+  }
+  .main__container .fourmeal {
+    height: 26em;
+  }
+  .main__container--wrapper2, .main__container--wrapper3 {
+    height: 20em;
+  }
+  .main__container--text h4 {
+    font-size: 1.1em;
+  }
+  .main__container--text p {
+    font-size: 1.1em;
+  }
+  .main__container--text--price {
+    font-size: 1.1em;
+  }
+
+  footer {
+    padding-bottom: 2%;
   }
 }
 
