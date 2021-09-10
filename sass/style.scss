@@ -830,12 +830,21 @@ main {
     align-items: center;
     margin-bottom: 7em;
   }
+  .menu2 {
+    height: 70em;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7em;
+  }
 
   .main__container {
     height: 92%;
     width: 90%;
     border-radius: 35px;
-    opacity: 0.9;
+    background-color: rgba(#fff, $alpha: 0.9);
     &--bigwrapper {
       display: flex;
       width: 100%;
@@ -957,6 +966,70 @@ main {
       }
     }
   }
+  .restaurant__container {
+    &--menutitle {
+      font-size: 1.5em;
+      i {
+        font-size: 1.5em;
+      }
+    }
+    img {
+      height: 96em;
+    }
+    .enchantee {
+      height: 116em;
+    }
+  }
+  .menu {
+    height: 80em;
+  }
+  .menu2 {
+    height: 100em;
+  }
+  .main__container {
+    height: 100%;
+    h3 {
+      font-size: 1.8em;
+    }
+    &--menutitle {
+      font-size: 1.7em;
+      align-items: center;
+      i {
+        font-size: 1.7em;
+      }
+    }
+    &--wrapper1,
+    &--wrapper2,
+    &--wrapper3 {
+      height: 22em;
+    }
+    .fourmeal {
+      height: 30em;
+    }
+    &--text {
+      h4 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 1.5em;
+        width: 31vw;
+      }
+    }
+    &--price {
+      font-size: 1.5em;
+    }
+    .full__heart--menu {
+      font-size: 1.5em;
+      bottom: 19px;
+      left: 1px;
+    }
+    &--button {
+      width: 28%;
+      margin: 6% 0% 5%;
+      padding: 23px;
+      font-size: 1.7em;
+    }
+  }
   .container {
     height: 50rem;
     justify-content: space-evenly;
@@ -1004,7 +1077,7 @@ main {
   }
   footer {
     h5 {
-      font-size: 5em;
+      font-size: 4em;
     }
     ul {
       display: flex;
@@ -1013,7 +1086,7 @@ main {
       justify-content: space-around;
     }
     li {
-      font-size: 2em;
+      font-size: 1.7em;
     }
   }
 }
@@ -1043,22 +1116,101 @@ main {
   footer {
     padding-bottom: 3%;
     h5 {
-      font-size: 5em;
+      font-size: 3em;
     }
     li {
-      font-size: 2em;
+      font-size: 1.8em;
     }
   }
   .restaurant__container {
+    &--menutitle {
+      font-size: 1.4em;
+      i {
+        font-size: 1.4em;
+        &:visited {
+          color: #444;
+        }
+      }
+    }
     &--img {
       height: 2em;
       img {
         height: 79em;
       }
+      .enchantee {
+        height: 110em;
+      }
     }
   }
+  .menu2 {
+    height: 107em;
+    margin-bottom: 0em;
+  }
+
   .main__container {
-    height: 80%;
+    height: 75%;
+    width: 64%;
+    h4 {
+      font-size: 1.2em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    &--price {
+      font-size: 1.3em;
+    }
+    h3 {
+      font-size: 1.3em;
+    }
+    &--button {
+      width: 23%;
+      margin: 2% 0% 3%;
+      padding: 23px;
+      font-size: 1.3em;
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .restaurant__container {
+    h1 {
+      margin: 2% 0% 1%;
+    }
+    .enchantee {
+      height: 83em;
+    }
+  }
+  .menu2 {
+    height: 74em;
+  }
+  .main__container {
+    height: 100%;
     width: 57%;
+    &--menutitle {
+      font-size: 1.2em;
+    }
+    h3 {
+      font-size: 1.3em;
+    }
+    .fourmeal {
+      height: 26em;
+    }
+    &--wrapper2,
+    &--wrapper3 {
+      height: 20em;
+    }
+    &--text {
+      h4 {
+        font-size: 1.1em;
+      }
+      p {
+        font-size: 1.1em;
+      }
+      &--price {
+        font-size: 1.1em;
+      }
+    }
+  }
+  footer {
+    padding-bottom: 2%;
   }
 }
