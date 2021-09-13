@@ -102,6 +102,9 @@
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body {
   margin: 0;
@@ -110,17 +113,18 @@ body {
 }
 .ring {
   position: absolute;
-  top: 40%;
-  left: 30%;
   transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
+  width: 40vmin;
+  height: 40vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: transparent;
   border-radius: 50%;
   text-align: center;
   line-height: 150px;
   font-family: "Shrikhand";
-  font-size: 19px;
+  font-size: 18px;
   background: linear-gradient(to left, #9356dc 0%, #ff79da 50%, #99e2d0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -711,13 +715,30 @@ main {
     }
   }
 }*/
-@media (min-width: 759px) {
+@media (min-width: 500px) {
+  .ring {
+    width: 35vmin;
+    height: 35vmin;
+    font-size: 20px;
+  }
+}
+@media (min-width: 630px) {
+  .ring {
+    width: 25vmin;
+    height: 25vmin;
+    font-size: 20px;
+  }
   .container {
     height: 64rem;
     padding-bottom: 4em;
   }
 }
 @media (min-width: 760px) {
+  .ring {
+    width: 24vmin;
+    height: 24vmin;
+    font-size: 22px;
+  }
   nav {
     flex-direction: row;
     flex-wrap: wrap;
@@ -920,46 +941,55 @@ main {
 }
 
 @media (min-width: 1440px) {
+  .ring {
+    width: 25vmin;
+    height: 25vmin;
+    font-size: 25px;
+  }
   .header__container {
     &--title {
-      font-size: 2.7em;
-      padding: 2% 0%;
+      font-size: 1.7em;
+      padding: 1% 0%;
     }
     h2 {
-      font-size: 3em;
+      font-size: 2.2em;
     }
     p {
-      font-size: 1.6em;
+      font-size: 1.4em;
     }
     &--position {
-      padding: 2% 0%;
-      font-size: 1.5em;
-      .inputplace {
-        font-size: 1.4em;
-      }
+      padding: 1% 0%;
+      font-size: 1.1em;
     }
+    i {
+      font-size: 1.1em;
+    }
+    .inputplace {
+      font-size: 1.4em;
+    }
+
     h3 {
-      font-size: 2em;
+      font-size: 1.2em;
       margin-block-start: 1em;
-      margin-block-end: 0em;
+      margin-block-end: 1em;
     }
     &--restaurants {
-      height: 23em;
+      height: 19em;
     }
     &--navigation {
       font-size: 1.5em;
     }
     &--button {
-      font-size: 2em;
+      font-size: 1.3em;
       border-radius: 45px;
-      padding: 26px;
+      padding: 21px;
     }
     nav {
-      height: 10em;
+      height: 4em;
     }
     &--navbtn {
-      width: 30%;
-      font-size: 1.4em;
+      width: 26%;
+      font-size: 1.2em;
 
       i {
         font-size: 1.5em;
@@ -1031,24 +1061,24 @@ main {
     }
   }
   .container {
-    height: 50rem;
-    justify-content: space-evenly;
+    height: 44rem;
+    justify-content: space-around;
 
     &__box {
-      width: 45%;
-      height: 22em;
+      width: 34%;
+      height: 17em;
     }
     &__img {
-      height: 16em;
+      height: 12em;
     }
 
     &__img--new {
-      top: -15.8em;
-      height: 3.2em;
-      width: 9em;
+      top: -11.8em;
+      height: 2.2em;
+      width: 7em;
     }
     &__img--new p {
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
     img {
       height: 100%;
@@ -1056,37 +1086,38 @@ main {
     }
     &__caption {
       align-items: center;
-      width: 94%;
+      width: 90%;
+
       h4 {
-        font-size: 1.7em;
+        font-size: 1.4em;
       }
       p {
-        font-size: 1.5em;
+        font-size: 1.4em;
       }
       .fa-heart__box {
-        font-size: 1.5em;
+        font-size: 1.4em;
       }
       .empty__heart {
-        left: 47px;
-        font-size: 1.8em;
+        left: 45px;
+        font-size: 1.9em;
       }
     }
   }
   main h1 {
-    font-size: 2.8em;
+    font-size: 1.8em;
   }
   footer {
     h5 {
-      font-size: 4em;
+      font-size: 3em;
     }
     ul {
       display: flex;
       flex-wrap: wrap;
-      width: 50em;
+      width: 44em;
       justify-content: space-around;
     }
     li {
-      font-size: 1.7em;
+      font-size: 1.5em;
     }
   }
 }
@@ -1171,6 +1202,11 @@ main {
   }
 }
 @media (min-width: 1920px) {
+  .ring {
+    width: 30vmin;
+    height: 30vmin;
+    font-size: 35px;
+  }
   .restaurant__container {
     h1 {
       margin: 2% 0% 1%;
