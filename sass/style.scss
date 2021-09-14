@@ -271,7 +271,9 @@ body {
       color: #fff;
       box-sizing: border-box;
     }
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       background: lighten($color-primary, 35%);
       i {
         color: $color-primary;
@@ -320,7 +322,9 @@ main {
     background-color: #fff;
     transform: scale(1);
     transition: 0.3s;
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       transform: scale(1.05);
     }
   }
@@ -409,6 +413,7 @@ main {
 .fa-heart__box:hover .full__heart {
   transform: scale(1);
 }
+
 .full__heart--menu {
   transform-origin: bottom;
   position: relative;
@@ -553,13 +558,15 @@ main {
   &--wrapper2,
   &--wrapper3 {
     width: 100%;
-    height: 16em;
+    height: 15em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
-
+  .fourmeal {
+    height: 20em;
+  }
   &--meal {
     overflow: hidden;
     width: 95%;
@@ -690,31 +697,12 @@ main {
   &--button {
     @include btn-pink;
     width: 45%;
-    margin: 10% 0% 16%;
+    margin: 8% 0% 9%;
   }
 }
 
 /*commentaire*/
-/*@media (min-width: 474px) {
-  .header__container--navbtn span {
-    left: 5%;
-  }
-  .container {
-    height: 145vh;
-    &__box {
-      height: 28vh;
-    }
-    &__img {
-      height: 73%;
-      img {
-        height: 19vh;
-      }
-      &--new {
-        top: -10.8em;
-      }
-    }
-  }
-}*/
+
 @media (min-width: 500px) {
   .ring {
     width: 35vmin;
@@ -802,6 +790,9 @@ main {
     &--wrapper3 {
       height: 20em;
     }
+    .fourmeal {
+      height: 27em;
+    }
     &--text p {
       font-size: 1em;
     }
@@ -824,6 +815,9 @@ main {
       .main__container--check {
         width: 10%;
       }
+    }
+    &--button {
+      margin: 4% 0% 5%;
     }
   }
 }
@@ -1011,14 +1005,14 @@ main {
       height: 78em;
     }
     .enchantee {
-      height: 116em;
+      height: 86em;
     }
   }
   .menu {
     height: 61em;
   }
   .menu2 {
-    height: 100em;
+    height: 69em;
   }
   .main__container {
     height: 100%;
@@ -1045,7 +1039,7 @@ main {
       height: 20em;
     }
     .fourmeal {
-      height: 30em;
+      height: 26em;
     }
     &--text {
       h4 {
@@ -1053,16 +1047,16 @@ main {
       }
       p {
         font-size: 1.2em;
-        width: 31vw;
+        width: 24vw;
       }
     }
     &--price {
       font-size: 1.3em;
     }
     .full__heart--menu {
-      font-size: 1.5em;
-      bottom: 19px;
-      left: 1px;
+      font-size: 1.4em;
+      bottom: 16px;
+      left: 2px;
     }
     &--box {
       width: 42%;
@@ -1181,21 +1175,26 @@ main {
     &--img {
       height: 2em;
       img {
-        height: 79em;
+        height: 77em;
       }
       .enchantee {
-        height: 110em;
+        height: 97em;
       }
     }
   }
+  .menu {
+    height: 68em;
+  }
   .menu2 {
-    height: 107em;
-    margin-bottom: 0em;
+    height: 87em;
   }
 
   .main__container {
-    height: 75%;
+    height: 100%;
     width: 64%;
+    .full__heart--menu {
+      bottom: 16px;
+    }
     h4 {
       font-size: 1.2em;
     }
@@ -1215,6 +1214,9 @@ main {
       font-size: 1.3em;
     }
   }
+  .big-container {
+    height: 86%;
+  }
 }
 @media (min-width: 1920px) {
   .ring {
@@ -1227,17 +1229,22 @@ main {
       margin: 2% 0% 1%;
     }
     .enchantee {
-      height: 83em;
+      height: 85em;
     }
   }
   .menu2 {
-    height: 74em;
+    height: 75em;
   }
   .main__container {
     height: 100%;
     width: 57%;
     &--menutitle {
       font-size: 1.2em;
+    }
+    .full__heart--menu {
+      font-size: 1.5em;
+      bottom: 5px;
+      left: 0px;
     }
     h3 {
       font-size: 1.3em;
@@ -1260,6 +1267,9 @@ main {
         font-size: 1.1em;
       }
     }
+  }
+  .big-container {
+    height: 100%;
   }
   footer {
     padding-bottom: 2%;
