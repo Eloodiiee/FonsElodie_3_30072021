@@ -1017,15 +1017,19 @@ main {
   .restaurant__container--menutitle i {
     font-size: 1.5em;
   }
+  .restaurant__container--menutitle h1 {
+    margin-block-start: 0.3em;
+    margin-block-end: 0.4em;
+  }
   .restaurant__container img {
-    height: 96em;
+    height: 78em;
   }
   .restaurant__container .enchantee {
     height: 116em;
   }
 
   .menu {
-    height: 80em;
+    height: 61em;
   }
 
   .menu2 {
@@ -1034,43 +1038,53 @@ main {
 
   .main__container {
     height: 100%;
+    width: 75%;
   }
   .main__container h3 {
-    font-size: 1.8em;
+    font-size: 1.4em;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
   }
   .main__container--menutitle {
-    font-size: 1.7em;
+    font-size: 1.6em;
     align-items: center;
   }
   .main__container--menutitle i {
     font-size: 1.7em;
   }
+  .main__container--menutitle h2 {
+    margin-block-end: 0.2em;
+    font-size: 1.3em;
+  }
   .main__container--wrapper1, .main__container--wrapper2, .main__container--wrapper3 {
-    height: 22em;
+    height: 20em;
   }
   .main__container .fourmeal {
     height: 30em;
   }
   .main__container--text h4 {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .main__container--text p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 31vw;
   }
   .main__container--price {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .main__container .full__heart--menu {
     font-size: 1.5em;
     bottom: 19px;
     left: 1px;
   }
+  .main__container--box {
+    width: 42%;
+  }
   .main__container--button {
-    width: 28%;
-    margin: 6% 0% 5%;
-    padding: 23px;
-    font-size: 1.7em;
+    width: 20%;
+    margin: 2% 0% 2%;
+    padding: 19px;
+    font-size: 1.4em;
   }
 
   .container {
