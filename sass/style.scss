@@ -1002,62 +1002,77 @@ main {
       i {
         font-size: 1.5em;
       }
+      h1 {
+        margin-block-start: 0.3em;
+        margin-block-end: 0.4em;
+      }
     }
     img {
-      height: 96em;
+      height: 78em;
     }
     .enchantee {
       height: 116em;
     }
   }
   .menu {
-    height: 80em;
+    height: 61em;
   }
   .menu2 {
     height: 100em;
   }
   .main__container {
     height: 100%;
+    width: 75%;
     h3 {
-      font-size: 1.8em;
+      font-size: 1.4em;
+      margin-block-start: 0em;
+      margin-block-end: 1em;
     }
     &--menutitle {
-      font-size: 1.7em;
+      font-size: 1.6em;
       align-items: center;
       i {
         font-size: 1.7em;
+      }
+      h2 {
+        margin-block-end: 0.2em;
+        font-size: 1.3em;
       }
     }
     &--wrapper1,
     &--wrapper2,
     &--wrapper3 {
-      height: 22em;
+      height: 20em;
     }
     .fourmeal {
       height: 30em;
     }
     &--text {
       h4 {
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
       p {
-        font-size: 1.5em;
+        font-size: 1.2em;
         width: 31vw;
       }
     }
     &--price {
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
     .full__heart--menu {
       font-size: 1.5em;
       bottom: 19px;
       left: 1px;
     }
+    &--box {
+      width: 42%;
+    }
+
     &--button {
-      width: 28%;
-      margin: 6% 0% 5%;
-      padding: 23px;
-      font-size: 1.7em;
+      width: 20%;
+      margin: 2% 0% 2%;
+      padding: 19px;
+      font-size: 1.4em;
     }
   }
   .container {
