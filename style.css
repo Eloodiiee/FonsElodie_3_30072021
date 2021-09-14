@@ -296,10 +296,10 @@ body {
   color: #fff;
   box-sizing: border-box;
 }
-.header__container--navbtn:hover {
+.header__container--navbtn:hover, .header__container--navbtn:active, .header__container--navbtn:focus {
   background: #f2eafb;
 }
-.header__container--navbtn:hover i {
+.header__container--navbtn:hover i, .header__container--navbtn:active i, .header__container--navbtn:focus i {
   color: #9356dc;
 }
 
@@ -347,7 +347,7 @@ main h1 {
   transform: scale(1);
   transition: 0.3s;
 }
-.container__box:hover {
+.container__box:hover, .container__box:active, .container__box:focus {
   transform: scale(1.05);
 }
 .container img {
@@ -567,11 +567,14 @@ main {
 }
 .main__container--wrapper1, .main__container--wrapper2, .main__container--wrapper3 {
   width: 100%;
-  height: 16em;
+  height: 15em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+.main__container .fourmeal {
+  height: 20em;
 }
 .main__container--meal {
   overflow: hidden;
@@ -704,7 +707,7 @@ main {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.2s;
   width: 45%;
-  margin: 10% 0% 16%;
+  margin: 8% 0% 9%;
 }
 .main__container--button:hover {
   transform: translateY(-3px);
@@ -719,26 +722,6 @@ main {
 }
 
 /*commentaire*/
-/*@media (min-width: 474px) {
-  .header__container--navbtn span {
-    left: 5%;
-  }
-  .container {
-    height: 145vh;
-    &__box {
-      height: 28vh;
-    }
-    &__img {
-      height: 73%;
-      img {
-        height: 19vh;
-      }
-      &--new {
-        top: -10.8em;
-      }
-    }
-  }
-}*/
 @media (min-width: 500px) {
   .ring {
     width: 35vmin;
@@ -828,6 +811,9 @@ main {
   .main__container--wrapper1, .main__container--wrapper2, .main__container--wrapper3 {
     height: 20em;
   }
+  .main__container .fourmeal {
+    height: 27em;
+  }
   .main__container--text p {
     font-size: 1em;
   }
@@ -848,6 +834,9 @@ main {
   }
   .main__container--meal:hover .main__container--check {
     width: 10%;
+  }
+  .main__container--button {
+    margin: 4% 0% 5%;
   }
 }
 @media (min-width: 1024px) {
@@ -1025,7 +1014,7 @@ main {
     height: 78em;
   }
   .restaurant__container .enchantee {
-    height: 116em;
+    height: 86em;
   }
 
   .menu {
@@ -1033,7 +1022,7 @@ main {
   }
 
   .menu2 {
-    height: 100em;
+    height: 69em;
   }
 
   .main__container {
@@ -1060,22 +1049,22 @@ main {
     height: 20em;
   }
   .main__container .fourmeal {
-    height: 30em;
+    height: 26em;
   }
   .main__container--text h4 {
     font-size: 1.2em;
   }
   .main__container--text p {
     font-size: 1.2em;
-    width: 31vw;
+    width: 24vw;
   }
   .main__container--price {
     font-size: 1.3em;
   }
   .main__container .full__heart--menu {
-    font-size: 1.5em;
-    bottom: 19px;
-    left: 1px;
+    font-size: 1.4em;
+    bottom: 16px;
+    left: 2px;
   }
   .main__container--box {
     width: 42%;
@@ -1189,20 +1178,26 @@ main {
     height: 2em;
   }
   .restaurant__container--img img {
-    height: 79em;
+    height: 77em;
   }
   .restaurant__container--img .enchantee {
-    height: 110em;
+    height: 97em;
+  }
+
+  .menu {
+    height: 68em;
   }
 
   .menu2 {
-    height: 107em;
-    margin-bottom: 0em;
+    height: 87em;
   }
 
   .main__container {
-    height: 75%;
+    height: 100%;
     width: 64%;
+  }
+  .main__container .full__heart--menu {
+    bottom: 16px;
   }
   .main__container h4 {
     font-size: 1.2em;
@@ -1222,6 +1217,10 @@ main {
     padding: 23px;
     font-size: 1.3em;
   }
+
+  .big-container {
+    height: 86%;
+  }
 }
 @media (min-width: 1920px) {
   .ring {
@@ -1234,11 +1233,11 @@ main {
     margin: 2% 0% 1%;
   }
   .restaurant__container .enchantee {
-    height: 83em;
+    height: 85em;
   }
 
   .menu2 {
-    height: 74em;
+    height: 75em;
   }
 
   .main__container {
@@ -1247,6 +1246,11 @@ main {
   }
   .main__container--menutitle {
     font-size: 1.2em;
+  }
+  .main__container .full__heart--menu {
+    font-size: 1.5em;
+    bottom: 5px;
+    left: 0px;
   }
   .main__container h3 {
     font-size: 1.3em;
@@ -1265,6 +1269,10 @@ main {
   }
   .main__container--text--price {
     font-size: 1.1em;
+  }
+
+  .big-container {
+    height: 100%;
   }
 
   footer {
